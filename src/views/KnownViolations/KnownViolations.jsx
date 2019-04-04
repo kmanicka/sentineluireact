@@ -70,21 +70,19 @@ function KnownViolations(props) {
             headerColor="primary"
             tabs={[
               {
-                tabName: "10 min",
+                tabName: "Top Violations",
                 tabIcon: BugReport,
                 tabContent: (
                   <Card>
                     <CardBody>
                       <Table
                         tableHeaderColor="primary"
-                        tableHead={["Name", "Country", "City", "Salary"]}
+                        tableHead={["Source", "Destination", "Violation Count", "Exception JIRA", "Action"]}
                         tableData={[
-                          ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                          ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                          ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                          ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                          ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                          ["10.20.30.40", "abc.appservice_ENVabcd", "20000", "JIRA-1231", ""],
+                          ["xyz.appservice_ENVabcd", "abc.appservice_ENVabcd", "2000", "JIRA-1232", ""],
+                          ["xyz123.appservice_ENVabcd", "abc.appservice_ENVabcd", "200", "JIRA-1233", ""],
+                          ["xyz123.appservice_ENVabcd", "abc123.appservice_ENVabcd", "20", "JIRA-1234", ""]
                         ]}
                       />
                     </CardBody>
@@ -92,21 +90,19 @@ function KnownViolations(props) {
                 )
               },
               {
-                tabName: "30 min",
+                tabName: "Top Source",
                 tabIcon: BugReport,
                 tabContent: (
                   <Card>
                     <CardBody>
                       <Table
                         tableHeaderColor="primary"
-                        tableHead={["Name", "Country", "City", "Salary"]}
+                        tableHead={["Source", "Owner", "Violation Count", "Exception JIRA", "Action"]}
                         tableData={[
-                          ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                          ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                          ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                          ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                          ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                          ["10.20.30.40", "owner1", "20000", "JIRA-1231",""],
+                          ["xyz.appservice_ENVabcd", "owner2", "2000", "JIRA-1232",""],
+                          ["xyz123.appservice_ENVabcd", "owner13", "200", "JIRA-1234",""],
+                          ["xyz123.appservice_ENVabcd", "owner4", "20", "JIRA-1235",""]
                         ]}
                       />
                     </CardBody>
@@ -114,21 +110,19 @@ function KnownViolations(props) {
                 )
               },
               {
-                tabName: "1 hour",
+                tabName: "Top Destination",
                 tabIcon: BugReport,
                 tabContent: (
                   <Card>
                     <CardBody>
                       <Table
                         tableHeaderColor="primary"
-                        tableHead={["Name", "Country", "City", "Salary"]}
+                        tableHead={["Destination", "Owner", "Violation Count", "Exception JIRA", "Action"]}
                         tableData={[
-                          ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                          ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                          ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                          ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                          ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                          ["10.20.30.40", "owner1", "20000", "JIRA-1231",""],
+                          ["xyz.appservice_ENVabcd", "owner2", "2000", "JIRA-1232",""],
+                          ["xyz123.appservice_ENVabcd", "owner13", "200", "JIRA-1234",""],
+                          ["xyz123.appservice_ENVabcd", "owner4", "20", "JIRA-1235",""]
                         ]}
                       />
                     </CardBody>

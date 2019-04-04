@@ -70,21 +70,20 @@ function RestorePolicies(props) {
             headerColor="primary"
             tabs={[
               {
-                tabName: "10 min",
+                tabName: "Recent",
                 tabIcon: BugReport,
                 tabContent: (
                   <Card>
                     <CardBody>
                       <Table
                         tableHeaderColor="primary"
-                        tableHead={["Name", "Country", "City", "Salary"]}
+                        tableHead={["Created", "Sentinel Policy", "RESTORE Ticket", "RCA Link", "Action"]}
                         tableData={[
-                          ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                          ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                          ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                          ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                          ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                          ["01/01/2019 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627873", "Link1", ""],
+                          ["01/02/2019 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627871", "Link1", ""],
+                          ["01/03/2019 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627872", "Link1", ""],
+                          ["01/04/2019 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627875", "Link1", ""],
+                          ["01/05/2019 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627873", "Link1", ""]
                         ]}
                       />
                     </CardBody>
@@ -92,43 +91,25 @@ function RestorePolicies(props) {
                 )
               },
               {
-                tabName: "30 min",
+                tabName: "Past Due (1 week)",
                 tabIcon: BugReport,
                 tabContent: (
                   <Card>
                     <CardBody>
                       <Table
                         tableHeaderColor="primary"
-                        tableHead={["Name", "Country", "City", "Salary"]}
+                        tableHead={["Created", "Sentinel Policy", "RESTORE Ticket", "RCA Link", "Action"]}
                         tableData={[
-                          ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                          ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                          ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                          ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                          ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
-                        ]}
-                      />
-                    </CardBody>
-                  </Card>
-                )
-              },
-              {
-                tabName: "1 hour",
-                tabIcon: BugReport,
-                tabContent: (
-                  <Card>
-                    <CardBody>
-                      <Table
-                        tableHeaderColor="primary"
-                        tableHead={["Name", "Country", "City", "Salary"]}
-                        tableData={[
-                          ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                          ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                          ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                          ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                          ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                          ["01/01/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627873", "Link1", ""],
+                          ["01/02/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627871", "Link1", ""],
+                          ["01/03/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627872", "Link1", ""],
+                          ["01/04/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627875", "Link1", ""],
+                          ["01/05/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627873", "Link1", ""], 
+                          ["01/01/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627873", "Link1", ""],
+                          ["01/02/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627871", "Link1", ""],
+                          ["01/03/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627872", "Link1", ""],
+                          ["01/04/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627875", "Link1", ""],
+                          ["01/05/2018 ","policy-pmtbaasecdc-app-ENV6imo6zd8b1g-sasamlnfs-addresssets", "RESTR48627873", "Link1", ""]
                         ]}
                       />
                     </CardBody>

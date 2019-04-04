@@ -70,65 +70,21 @@ function CriticalApplications(props) {
             headerColor="primary"
             tabs={[
               {
-                tabName: "10 min",
+                tabName: "Critical Apps",
                 tabIcon: BugReport,
                 tabContent: (
                   <Card>
                     <CardBody>
                       <Table
                         tableHeaderColor="primary"
-                        tableHead={["Name", "Country", "City", "Salary"]}
+                        tableHead={["Name", "Group", "Action"]}
                         tableData={[
-                          ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                          ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                          ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                          ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                          ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
-                        ]}
-                      />
-                    </CardBody>
-                  </Card>
-                )
-              },
-              {
-                tabName: "30 min",
-                tabIcon: BugReport,
-                tabContent: (
-                  <Card>
-                    <CardBody>
-                      <Table
-                        tableHeaderColor="primary"
-                        tableHead={["Name", "Country", "City", "Salary"]}
-                        tableData={[
-                          ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                          ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                          ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                          ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                          ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
-                        ]}
-                      />
-                    </CardBody>
-                  </Card>
-                )
-              },
-              {
-                tabName: "1 hour",
-                tabIcon: BugReport,
-                tabContent: (
-                  <Card>
-                    <CardBody>
-                      <Table
-                        tableHeaderColor="primary"
-                        tableHead={["Name", "Country", "City", "Salary"]}
-                        tableData={[
-                          ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                          ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                          ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                          ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                          ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                          ["Mason Porter", "Chile", "Gloucester", "$78,615"]
+                          ["checkout api", "checkout", ""],
+                          ["xonyx", "checkout", ""],
+                          ["xoneor", "checkout", ""],
+                          ["selweb", "selling", "",],
+                          ["selservice", "selling", "",],
+                          ["sellapps", "selling", ""]
                         ]}
                       />
                     </CardBody>
